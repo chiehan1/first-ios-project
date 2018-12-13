@@ -12,6 +12,8 @@
 		F33E20FA21BFA7BF00A319C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33E20F821BFA7BF00A319C2 /* Main.storyboard */; };
 		F33E20FC21BFA7D900A319C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33E20FB21BFA7D900A319C2 /* Assets.xcassets */; };
 		F33E20FF21BFA7D900A319C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33E20FD21BFA7D900A319C2 /* LaunchScreen.storyboard */; };
+		F3F04AED21C1FEB5008EDF7E /* MyCustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F04AEC21C1FEB5008EDF7E /* MyCustomViewController.swift */; };
+		F3F04AF021C20DB8008EDF7E /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F04AEF21C20DB8008EDF7E /* ContactsUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,14 @@
 		F33E20FB21BFA7D900A319C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F33E20FE21BFA7D900A319C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F33E210021BFA7D900A319C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F33E210621BFAD0900A319C2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		F33E210721BFAD0A00A319C2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		F33E210821BFAD3100A319C2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		F33E210921BFAD3300A319C2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		F33E210A21BFAD6000A319C2 /* bo */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bo; path = bo.lproj/Main.strings; sourceTree = "<group>"; };
+		F33E210B21BFAD6000A319C2 /* bo */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bo; path = bo.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F3F04AEC21C1FEB5008EDF7E /* MyCustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomViewController.swift; sourceTree = "<group>"; };
+		F3F04AEF21C20DB8008EDF7E /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F04AF021C20DB8008EDF7E /* ContactsUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,7 @@
 			children = (
 				F33E20F321BFA7BF00A319C2 /* MyFirstProject */,
 				F33E20F221BFA7BF00A319C2 /* Products */,
+				F3F04AEE21C20DB8008EDF7E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +68,21 @@
 			children = (
 				F33E20F421BFA7BF00A319C2 /* AppDelegate.swift */,
 				F33E20F621BFA7BF00A319C2 /* ViewController.swift */,
+				F3F04AEC21C1FEB5008EDF7E /* MyCustomViewController.swift */,
 				F33E20F821BFA7BF00A319C2 /* Main.storyboard */,
 				F33E20FB21BFA7D900A319C2 /* Assets.xcassets */,
 				F33E20FD21BFA7D900A319C2 /* LaunchScreen.storyboard */,
 				F33E210021BFA7D900A319C2 /* Info.plist */,
 			);
 			path = MyFirstProject;
+			sourceTree = "<group>";
+		};
+		F3F04AEE21C20DB8008EDF7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3F04AEF21C20DB8008EDF7E /* ContactsUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F04AED21C1FEB5008EDF7E /* MyCustomViewController.swift in Sources */,
 				F33E20F721BFA7BF00A319C2 /* ViewController.swift in Sources */,
 				F33E20F521BFA7BF00A319C2 /* AppDelegate.swift in Sources */,
 			);
@@ -147,6 +169,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				F33E20F921BFA7BF00A319C2 /* Base */,
+				F33E210621BFAD0900A319C2 /* zh-Hant */,
+				F33E210821BFAD3100A319C2 /* zh-Hant */,
+				F33E210A21BFAD6000A319C2 /* bo */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -155,6 +180,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				F33E20FE21BFA7D900A319C2 /* Base */,
+				F33E210721BFAD0A00A319C2 /* zh-Hant */,
+				F33E210921BFAD3300A319C2 /* zh-Hant */,
+				F33E210B21BFAD6000A319C2 /* bo */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,6 +194,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -213,7 +242,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -227,6 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -268,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -285,6 +315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9UJ9JY86RN;
 				INFOPLIST_FILE = MyFirstProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +334,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9UJ9JY86RN;
 				INFOPLIST_FILE = MyFirstProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
